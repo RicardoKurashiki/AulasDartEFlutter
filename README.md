@@ -27,8 +27,12 @@ O repositório é dividido em 5 temas gerais e 8 projetos, sendo esses
 7. Design do seu portfólio
 8. Criação do portfólio
 
+## Referências
+
+[Flutterando - Flutter Roadmap](https://github.com/Flutterando/roadmap)
+
 ## Redes sociais
 
-E-mail: ricardo.g.kurashiki@gmail.com
-
-Twitter: @RKurashiki01
+E-mail: ricardo.g.kurashiki@gmail.com <br>
+Twitter: [@RKurashiki01](https://twitter.com/RKurashiki01) <br>
+LinkedIn: [RicardoKurashiki](https://www.linkedin.com/in/ricardo-godoi-kurashiki-5236921b1/) <br>
