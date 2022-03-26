@@ -1,4 +1,4 @@
-## Classes - CONSTRUTORES
+## Classes - EXTRA
 
 Algumas informações a mais sobre classes e construtores.
 
@@ -77,4 +77,49 @@ void main() {
         });
 }
 
+```
+
+3. As classes possuem alguns métodos já criados, que são métodos herdados (veremos sobre Herança nas próximas aulas). Uma delas é a `toString()`.
+
+```dart
+// Lembra que já foi feito o seguinte código:
+int a = 10;
+
+String b = a.toString();
+
+// O toString é um método da classe int, esse que também existe em outras classes criadas.
+// Esse método é o método que é chamado sempre que fazemos um print de algo.
+
+class Pessoa {
+  String nome;
+  int idade;
+  double altura;
+  double peso;
+
+  Pessoa(this.nome, this.idade, this.altura, this.peso);
+
+  // Esses dois pontos (:) servem para transferir o valor que está vindo para as propriedades da classe.
+  Pessoa.fromMap(Map<String, dynamic> mapa) :
+        nome = mapa['nome'],
+        idade = mapa['idade'],
+        altura = mapa['altura'],
+        peso = mapa['peso'];
+
+    // o OVERRIDE serve para SOBRESCREVER a função com outra que você criará em seguida.
+    // Ele substitui a função antiga pela nova.
+    @override
+    String toString() {
+        return "Nome: $nome, Idade: $idade anos, Altura: $altura m, Peso: $peso kg";
+    }
+}
+
+void main() {
+    Pessoa pessoa1 = Pessoa("Ricardo", 20, 1.80, 80.0);
+
+    print(pessoa1);
+    // Sem o toString sobrescrevido, o print iria ser igual à:
+    // >> Instance of "Pessoa".
+    // Mas como sobrescrevemos com o @override, o print agora será igual à:
+    // >> Nome: Ricardo, Idade: 20 anos, Altura: 1.80 m, Peso: 80.0 kg
+}
 ```
